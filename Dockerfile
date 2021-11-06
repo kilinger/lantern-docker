@@ -3,7 +3,7 @@ FROM ubuntu:20.10
 WORKDIR /root
 RUN apt-get update  && \
          apt-get -y install wget libappindicator3-1 libpcap0.8:amd64 && \
-	 wget -O lantern.deb https://github.com/getlantern/lantern-binaries/blob/master/lantern-installer-64-bit.deb && \
+	 wget -O lantern.deb https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-64-bit.deb && \
 	 wget -O settings.yaml https://raw.githubusercontent.com/kilinger/lantern-docker/myself/settings.yaml && \
          dpkg -i lantern.deb && \
          rm -rf lantern.deb && \
