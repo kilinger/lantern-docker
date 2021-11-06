@@ -1,6 +1,4 @@
 FROM ubuntu:20.10
-MAINTAINER Richard Yu <xiaoqingfengatgm@gmail.com>
-# https://github.com/xiaoqingfengATGH/lantern
 # lastest lantern version: latest
 WORKDIR /root
 RUN apt-get update  && \
