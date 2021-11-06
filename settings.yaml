@@ -1,10 +1,10 @@
-addr: '0.0.0.0:3128'
+addr: '0.0.0.0:1070'
 autoLaunch: false
 autoReport: true
 lang: "zh-CN"
 localHTTPToken: lantern
-pacURL: ""
+pacURL: "https://github.com/petronny/gfwlist2pac/blob/master/gfwlist.pac"
 proxyAll: true
-socksAddr: '0.0.0.0:3129'
+socksAddr: '0.0.0.0:1080'
 systemProxy: false
 uiAddr: 0.0.0.0:8080
