@@ -2,7 +2,7 @@ FROM ubuntu:20.10
 # lastest lantern version: latest
 WORKDIR /root
 RUN apt-get update  && \
-         apt-get -y install wget libappindicator3-1 libpcap0.8:amd64 && \
+         apt-get -y install wget ca-certificates libappindicator3-1 libpcap0.8:amd64 && \
 	 wget -O lantern.deb https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-64-bit.deb && \
 	 wget -O settings.yaml https://raw.githubusercontent.com/kilinger/lantern-docker/myself/settings.yaml && \
          dpkg -i lantern.deb && \
